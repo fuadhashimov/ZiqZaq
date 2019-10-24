@@ -13,11 +13,13 @@ namespace ZiqZaq.Data.EntityFramework.Contexts
         }
 
         public DbSet<Vendor> Vendors { get; set; }
+        public DbSet<Tour> Tours { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new ApplicationUserConfiguration());
             builder.ApplyConfiguration(new VendorConfiguration());
+            builder.ApplyConfiguration(new TourConfiguration());
 
             base.OnModelCreating(builder);
         }

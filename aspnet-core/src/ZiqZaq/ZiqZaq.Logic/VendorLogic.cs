@@ -17,7 +17,6 @@ namespace ZiqZaq.Logic
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ZiqZaqDbContext _dbContext;
-
         private readonly IMapper _mapper;
 
         public VendorLogic(UserManager<ApplicationUser> userManager, ZiqZaqDbContext dbContext,
@@ -25,7 +24,6 @@ namespace ZiqZaq.Logic
         {
             _userManager = userManager;
             _dbContext = dbContext;
-
             _mapper = mapper;
         }
 

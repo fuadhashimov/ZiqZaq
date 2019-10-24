@@ -10,6 +10,7 @@ namespace ZiqZaq.Web.Core.Modules
         {
             services.AddScoped<IUserLogic, UserLogic>();
             services.AddScoped<IVendorLogic, VendorLogic>();
+            services.AddScoped<ITourLogic, TourLogic>();
         }
     }
 }
